@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+  <link href="main.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Firebase</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+
+
+
+
+
+<body>
+  <div class="box">
+    <h1>Login</h1>
+    
+  <form>
+    <input type="email" placeholder="Email" id="email_field" />
+    <input type="password" placeholder="Password" id="pass_field" />
+    <input type="submit" id="loginbtn" onclick="login()" value="LOGIN"/>
+  </form>
+  
+  <div class="bottom-text">
+    <a href="index.html" id="gotosignup">Register</a>
+    <a href="#" id="fgtpass">Forgot Password ? </a>
+  </div>
+  
+  <div class="socials">
+    <a href="#"><i class="fa fa-google fa-2x"></i></a>
+  </div>
+</div>
+
+
+
+
+
+   <script>
+     // Initialize Firebase
+     var config = {
+       apiKey: "AIzaSyDXZR-sKU_mmG1u1RkTZ3BpC-HH--d7s64",
+       authDomain: "html-firebase-82480.firebaseapp.com",
+       databaseURL: "https://html-firebase-82480.firebaseio.com",
+       projectId: "html-firebase-82480",
+       storageBucket: "html-firebase-82480.appspot.com",
+       messagingSenderId: "264116871682",
+       appId: "1:264116871682:web:258e2d9bd55f697188bd1b",
+       measurementId: "G-CNGWCZTGM7"
+     };
+     firebase.initializeApp(config);
+   </script>
+   <script src="main.js"></script>
+
+</body>
+
+</html>
